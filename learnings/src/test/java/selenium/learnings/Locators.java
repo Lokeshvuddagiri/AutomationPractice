@@ -31,16 +31,16 @@ public class Locators {
 		driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy");
 		Thread.sleep(2000);
 		driver.findElement(By.className("signInBtn")).click(); 
+		driver.findElement(By.xpath("//button[contains(text(), 'Log Out')]")).click();
 		//rahulshettyacademy
 		// If we face no such element exception then we can overcome this situation by using the wait mechanism . Here i am implementing the implicit wait mechanism to show sup the elements
 		
 		
-		
-		
 		//driver.close(); //To close the browser instance
-		
-		
-
 	}
+	
+	}
+	
+	
 
-}
+
