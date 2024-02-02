@@ -25,7 +25,7 @@ public class StaticDropdown {
 		Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "AED");
 		dropdown.selectByVisibleText("USD");
 		Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "USD");
-		
+	
 		
 		
 	
