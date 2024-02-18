@@ -20,7 +20,7 @@ public class Base {
 		driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(8));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
 		String[] itemsNeeded= {"Cucumber","Brocolli","Beetroot"};
 
 
@@ -37,8 +37,9 @@ public class Base {
 		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".promoCode")));
 		driver.findElement(By.cssSelector(".promoCode")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.cssSelector(".promoBtn")).click();
-		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("\"span[class='promoInfo']\"")));
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[class='promoInfo']")));
 		System.out.println(driver.findElement(By.cssSelector("span[class='promoInfo']")).getText());
+		
 		
 		}
 
