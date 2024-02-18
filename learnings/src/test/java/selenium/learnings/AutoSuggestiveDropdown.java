@@ -26,6 +26,8 @@ public class AutoSuggestiveDropdown {
 	    	  break;
 	    	  
 	      }}
+	      
+	      
 driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).click();
 System.out.println(driver.findElements(By.xpath("//input[@type='checkbox']")).size());
 System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());
