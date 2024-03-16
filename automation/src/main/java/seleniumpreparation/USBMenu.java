@@ -43,7 +43,7 @@ public class USBMenu {
 //		String javascript = "document.getElementsByClassName('utility-link').style.border='2px solid red'";  
 //		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;  
 //		jsExecutor.executeScript(javascript); 
-		
+	//This is to check the git we can ignore it 
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
         //use executeScript() method and pass the arguments 
         //Here i pass values based on css style. Yellow background color with solid red color border. 
@@ -60,8 +60,11 @@ public class USBMenu {
 
 		}
 		
-		//driver.findElement(By.cssSelector("#smartAssistantLarge")).click();
-
+		driver.findElement(By.cssSelector("#smartAssistantLarge")).click();        System.out.println(driver.findElement(By.xpath("//div[@class='topSearchDiv']/div[@class='welcome-message']")).getText());
+		driver.findElement(By.cssSelector("#sa-modal-web--close")).click();
+		driver.findElement(By.cssSelector(".login-buttons")).click(); //To click on Login button
+		driver.findElement(By.cssSelector(".login-buttons")).click(); // To close the login form
+		
 	}
 
 }
