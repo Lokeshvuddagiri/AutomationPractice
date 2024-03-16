@@ -60,8 +60,8 @@ public class USBMenu {
 
 		}
 		
-		//driver.findElement(By.cssSelector("#smartAssistantLarge")).click();
-
+		driver.findElement(By.cssSelector("#smartAssistantLarge")).click();
+		driver.findElement(By.cssSelector("#sa-modal-web--close")).click();
 	}
 
 }
